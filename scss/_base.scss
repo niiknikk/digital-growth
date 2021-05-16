@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;    
+    font-size: 1.6rem;
+
+    overflow-x: hidden;
+}
+
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }; //600px        
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content }; //900px        
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content }; //1200px   
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content }; //1800px   
+    }
+}
+
+
+.social-links {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    text-align: start;
+
+    & span .fa {
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: $bg-color-yellow;
+      padding: 1rem;
+      font-size: 1.8rem;
+      color: #fff;
+    }
+  }
+
+  .mylink{
+    position: absolute;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    z-index: 5;
+   @include respond(phone){
+       bottom: 1rem;
+       right: 1rem;
+   }
+  }

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+$bg-color-yellow:#A16AE8 ;
+// #ffc8dd,#ffafcc, #bde0fe, #a2d2ff #cdb4db  #edeef7
+
+$bg-color-yellow-dark:#ffb703 ;
+$main-color:#A16AE8;
+
+.center{
+    text-align: center;
+}
+.wave-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1.5rem;
+    height: auto;
+
+    &-1{
+        height: auto;
+        background-image: linear-gradient(to top, #f6d5f7, #e8dfff, #dce8ff, #d8efff, #dbf5ff, #d4f3ff, #ccf0ff, #c5eeff, #b4e3ff, #abd6ff, #adc7ff, #b8b5ff);
+    }
+    &-2{
+        background-color: #fff;
+    }
+    &-3{
+        height: auto;
+        background-image: linear-gradient(to right, #f6d5f7, #e8dfff, #dce8ff, #d8efff, #dbf5ff, #d4f3ff, #ccf0ff, #c5eeff, #b4e3ff, #abd6ff, #adc7ff, #b8b5ff);
+    }
+    &-4{
+        height: auto;
+        background-color: #fff;
+    }
+    &-5{
+        background-image: linear-gradient(to right, #cdb4db, #cdb4db, #cdb4db, #cdb4db, #cdb4db, #cdb4db, #cdb4db, #cdb4db, #bca4ca, #cdb4db, #b9a2c7, #c1a5d1);
+    }
+    &-6{
+        height: auto;
+        background-color: #fff;
+    }
+    &-7{
+        height: auto;
+        background-color: #e4fbff;
+    }
+    
+}
+
+
+// margins
+.m-1{
+    margin: 1rem;
+}
+.m-1h{
+    margin: 1.5rem;
+}
+
+.m-2h{
+    margin: 2.5rem;
+}
+.m-2{
+    margin: 2rem;
+}
+.m-3{
+    margin: 3rem;
+}
+.m-4{
+    margin: 4rem;
+}
+.m-5{
+    margin: 5rem;
+}
+
+.my-2{
+    margin: 2rem 0;
+}
